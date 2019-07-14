@@ -80,6 +80,7 @@ class Form extends Component {
             onChange={this.inputOnChangeHandler}
             placeholder="Enter your name"
             name="name"
+            className="name"
           />
           <h3>Email:</h3>
           <input
@@ -88,6 +89,7 @@ class Form extends Component {
             onChange={this.inputOnChangeHandler}
             placeholder="Enter your email"
             name="email"
+            className="email"
           />
           <h3>Phone:</h3>
           <input
@@ -96,6 +98,7 @@ class Form extends Component {
             onChange={this.inputOnChangeHandler}
             placeholder="Enter your phone number"
             name="phone"
+            className="phone"
           />
           <h3>Blog URL:</h3>
           <input
@@ -104,6 +107,7 @@ class Form extends Component {
             onChange={this.inputOnChangeHandler}
             placeholder="Enter your url"
             name="url"
+            className="url"
           />
           <div className="small-6 small-centered text-center columns">
             <a
