@@ -30,11 +30,16 @@ class Form extends Component {
     return true;
   };
 
+  validatePhone = () => {
+    return /^[0-9]{10}$/.test(this.state.phone);
+  };
+
   validateClickHandler = e => {
     e.preventDefault();
 
     this.setState({
       isNameValid: this.validateName(),
+      isPhoneValid: this.validatePhone(),
     });
   };
 
