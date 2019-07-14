@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import {PropTypes} from 'prop-types';
+
+import Message from './Message';
 
 class Form extends Component {
   constructor(props) {
@@ -120,6 +121,13 @@ class Form extends Component {
             </a>
           </div>
         </form>
+
+        <Message
+          isEmailValid={this.state.isEmailValid}
+          isNameValid={this.state.isNameValid}
+          isPhoneValid={this.state.isPhoneValid}
+          isUrlValid={this.state.isUrlValid}
+        />
       </div>
     );
   }

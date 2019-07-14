@@ -1,15 +1,14 @@
 import React, {Component} from 'react';
-import Form from './components/Form'
-import Message from './components/Message'
+import Form from './components/Form';
 
 class App extends Component {
-
-    render() {
-        return (<div>
-            <Form></Form>
-            <Message></Message>
-        </div>);
-    }
+  render() {
+    return (
+      <div>
+        <Form />
+      </div>
+    );
+  }
 }
 
 export default App;
