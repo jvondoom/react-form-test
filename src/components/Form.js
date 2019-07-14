@@ -78,9 +78,7 @@ class Form extends Component {
             type="text"
             value={this.state.name}
             onChange={this.inputOnChangeHandler}
-            placeholder={
-              this.state.name === '' ? 'Enter your name' : this.state.name
-            }
+            placeholder="Enter your name"
             name="name"
           />
           <h3>Email:</h3>
@@ -88,9 +86,7 @@ class Form extends Component {
             type="text"
             value={this.state.email}
             onChange={this.inputOnChangeHandler}
-            placeholder={
-              this.state.email === '' ? 'Enter your email' : this.state.email
-            }
+            placeholder="Enter your email"
             name="email"
           />
           <h3>Phone:</h3>
@@ -98,11 +94,7 @@ class Form extends Component {
             type="text"
             value={this.state.phone}
             onChange={this.inputOnChangeHandler}
-            placeholder={
-              this.state.phone === ''
-                ? 'Enter your phone number'
-                : this.state.phone
-            }
+            placeholder="Enter your phone number"
             name="phone"
           />
           <h3>Blog URL:</h3>
@@ -110,9 +102,7 @@ class Form extends Component {
             type="text"
             value={this.state.url}
             onChange={this.inputOnChangeHandler}
-            placeholder={
-              this.state.url === '' ? 'Enter your url' : this.state.url
-            }
+            placeholder="Enter your url"
             name="url"
           />
           <div className="small-6 small-centered text-center columns">
