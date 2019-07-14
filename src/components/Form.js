@@ -16,11 +16,26 @@ class Form extends Component {
     };
 
     this.inputOnChangeHandler = this.inputOnChangeHandler.bind(this);
+    this.validateClickHandler = this.validateClickHandler.bind(this);
   }
+
+  validateName = () => {
+    if (
+      this.state.name.length < 3 ||
+      this.state.name.length >= 30 ||
+      !/^[a-zA-Z]*$/.test(this.state.name)
+    ) {
+      return false;
+    }
+    return true;
+  };
 
   validateClickHandler = e => {
     e.preventDefault();
-    console.log(e.currentTarget);
+
+    this.setState({
+      isNameValid: this.validateName(),
+    });
   };
 
   inputOnChangeHandler = e => {
